@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'frontend/**' # Only trigger when files in the 'frontend' path change
+
 
 jobs:
   deploy:
